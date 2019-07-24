@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Recommended Books</title>
+            <link rel="stylesheet" href="../css/font-awesome.min.css">
+            <link rel="stylesheet" href="../css/bootstrap.css">
+            <link rel="stylesheet" href="../css/main.css">
+        </head>
+    <body>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Kiosk Library</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li class="item"><a href="../index.html" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click to navigate to the homepage"><i class="fa fa-home"> Home</i></a></li> 
+                        <li class="item"><a href="#" id="log-q"  data-toggle="modal" data-target="#myLog" ><i class="fa fa-user-circle-o"> Login</i></a></li> 
+                        <li class="item"><a href="#"  class="log-n" data-toggle="modal" data-target="#myLog-n" ><i class="fa fa-user-circle-o"> John</i></a></li> 
+                        <li class="item"><div class="srch">
+                            <form action="#" class="navbar-form navbar-right" role="search" >
+                                <input type="search" name="search" class="search-bar"   size="12" placeholder="Search.." data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Enter some text to search for books in the library">
+                                <button  class="btn btn-lg"><i class="fa fa-search" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click to navigate to the homepage"></i></button>
+                            </form> 
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+        <div class="container">
+          <br>
+          <button class="btn btn-lg" id="prev"><a href="categories.html" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click to go back"><i class="fa fa-angle-double-left"> Prev</i></a></button>
+          <button class="btn btn-lg" id="next"><a href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click to go to the next page"><i class="fa fa-angle-double-right"> Next</i></a></button>
+          <br>
+            <div class="catName">
+                <h3>Recommended Category</h3> 
+            </div>
+                <div class="academic-bk" id="bk-1">
+                    <img src="../img/bk-1.jpg" alt="book 1" class="bkImg"> 
+                    <button type="button" class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                    <button type="button" class="btn btn-sm" id="reserve" data-toggle="modal" data-target="#rsvBook">Reserve</button>
+                </div>
+                <div class="academic-bk" id="bk-1">
+                        <img src="../img/bk-1.jpg" alt="book 1" class="bkImg">      <button type="button"  class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                        <button  class="btn btn-sm" id="reserve">Reserve</button>
+                    </div>
+                    <div class="academic-bk" id="bk-1">
+                        <img src="../img/bk-1.jpg" alt="book 1" class="bkImg"> 
+                        <button type="button"  class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                        <button  class="btn btn-sm" id="reserve">Reserve</button>
+                    </div>
+                    <div class="academic-bk" id="bk-1">
+                            <img src="../img/bk-1.jpg" alt="book 1" class="bkImg">      <button type="button"  class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                            <button  class="btn btn-sm" id="reserve">Reserve</button>
+                        </div>
+                        <div class="academic-bk" id="bk-1">
+                            <img src="../img/bk-1.jpg" alt="book 1" class="bkImg"> 
+                            <button type="button"  class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                            <button  class="btn btn-sm" id="reserve">Reserve</button>
+                        </div>
+                        <div class="academic-bk" id="bk-1">
+                                <img src="../img/bk-1.jpg" alt="book 1" class="bkImg">      <button type="button"  class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                                <button  class="btn btn-sm" id="reserve">Reserve</button>
+                            </div>
+                            <div class="academic-bk" id="bk-1">
+                                <img src="../img/bk-1.jpg" alt="book 1" class="bkImg"> 
+                                <button type="button"  class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                                <button  class="btn btn-sm" id="reserve">Reserve</button>
+                            </div>
+                            <div class="academic-bk" id="bk-1">
+                                    <img src="../img/bk-1.jpg" alt="book 1" class="bkImg">      <button type="button"  class="btn btn-sm" id="borrow" data-toggle="modal" data-target="#brwBook">Borrow</button>
+                                    <button  class="btn btn-sm" id="reserve">Reserve</button>
+                                </div>
+        </div>
+        <hr>  
+        
+        <!--    modals  -->
+        
+          <!--  Login modal -->
+          <div id="myLog" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title text-left">Login</h4>
+                    <button type="button btn-default" class="close" data-dismiss="modal">&times;</button>
+                    
+                  </div>
+                  <div class="login-body">
+                          <label for="User ID">
+                              User ID:
+                          </label>
+                          <input type="number" name="stdID" id="" placeholder="Enter your ID number" class="form-control">
+                          <label for="Password">
+                              Password:
+                          </label>
+                          <input type="password" name="password" id="" placeholder="Enter your password" class="form-control">
+                          <br>
+                          <button type="submit" class="btn btn-default" id="log-y">Student Login</button>
+                          <!--a href="admin/admin.html">Admin Login</a-->
+                  </div>
+                  <div class="alert alert-success log-s-a">
+                          <strong>Successfully logged in!</strong>
+                  </div>
+                  <!--div class="modal-footer">
+                      <button type="button" class="btn btn-default" id="brrw">Yes</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                  </div-->
+                </div>
+              </div>
+            </div>
+        <!--   end of login   -->
+
+        <!--  Logout modal -->
+        <div id="myLog-n" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title text-left">Logout</h4>
+                    <button type="button btn-default" class="close" data-dismiss="modal">&times;</button>
+                    
+                  </div>
+                  <div class="lo-q">
+                      <p>Do you want to logout of your account?</p>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" id="lo-true">Yes</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                  </div>
+                  </div>
+                  <div class="alert alert-info">
+                          <strong>Successfully logged out!</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!--   end of logout   -->
+        
+      <!--    end of modals   -->
+        <div id="brwBook" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button btn-sm" class="close" data-dismiss="modal">close &times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Do you want to borrow this book? </p>
+                    </div>
+                    <div class="alert alert-success">
+                            <strong>Book added to your borrowed list!</strong> <br>
+                            Proceed to the counter to collect your book.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"  class="btn btn-sm" id="brrw">Yes</button>
+                        <button type="button"  class="btn btn-sm" data-dismiss="modal">No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Reserve-->
+              <div id="rsvBook" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button btn-sm" class="close" data-dismiss="modal">close &times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Do you want to reserve this book? </p>
+                      </div>
+                      <div class="alert alert-success">
+                              <strong>Book added to your reserved list!</strong> <br>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button"  class="btn btn-sm" id="rsv">Yes</button>
+                          <button type="button"  class="btn btn-sm" data-dismiss="modal">No</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!--    end of modals   -->
+    
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/main.js"></script>
+        </body>
+    </html>
