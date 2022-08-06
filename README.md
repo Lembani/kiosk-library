@@ -5,7 +5,7 @@
 ## Features
 > Users
 
-This is a high fidelity prototype and it should enable the user to perform the following tasks:
+This is a high fidelity prototype and it enables the user to perform the following actions:
 1. Checking out of Books
 2. Book reservations
 3. Borrow Books
